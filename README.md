@@ -9,9 +9,10 @@ when the answer is wrong.
 
 From 04/2025 to 08/2026 I was Project Assistant VI on **[Project CrimeXPerience](https://crimexperience.com)**,
 a two-year DOST-funded XR crime scene simulation for Philippine criminology and forensics training, where I
-built the Gemini-powered NPC witness interviews and the Firebase services behind them, automated the
-project's log processing, survey analysis and document generation in Python, and trained the instructors
-who ran it. It runs with the Philippine National Police Academy and PNP Cordillera, and was featured on
+built its AI witness interviews as a real-time voice agent — live audio with tool calls, graded at the end,
+with the original scripted dialogue kept as a fallback — along with the server-side token broker and
+fail-closed feature gates that let it ship safely. I also automated the project's log processing, survey
+analysis and document generation in Python, and trained the instructors who ran it. It runs with the Philippine National Police Academy and PNP Cordillera, and was featured on
 [DOSTv's ExperTalk](https://www.youtube.com/watch?v=qvzBV1zxD7k). The code is university IP and not public;
 the project is.
 
