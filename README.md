@@ -44,7 +44,23 @@ strings and the UI all fall out of it. A `--check` mode regenerates every commit
 cannot drift from its generator without `git diff` saying so.
 `Python` · `Lua` · `code generation`
 
-Both mods come out of a modding practice I have kept up since 2020, which is where I learned to work
+**[derpy-great-guilds](https://github.com/DerpyNewb/derpy-great-guilds)** — Six guilds that every
+faction of your race earns reputation with just by playing: trading, fighting, researching, building and
+raiding. Favour buys 18 services, bounties turn into real missions, and the AI factions of your race
+compete with you for the lead in each guild. Eight races have their own guild names, and 1,726 building
+cards say which guild they pay; a build check runs the script's own matching over every building, so a
+card cannot name a different guild than the one that gets paid.
+`Python` · `Lua` · `game AI`
+
+**[derpy-iron-court](https://github.com/DerpyNewb/derpy-iron-court)** — A political court for the Chaos
+Dwarfs: rival parties, fourteen offices, provincial overseers, loyalty, intrigue, and secession into a war
+on the map, with rival parties that scheme and make demands on their own. Checked by a 579-check Lua
+harness against a stubbed campaign, and by a mutation runner that plants 358 plausible bugs in the
+shipped script one at a time and fails if any goes unnoticed. When one build broke the game's string library with no error
+pointing at the cause, the fault was bisected inside the running game through a scripting bridge.
+`Python` · `Lua` · `mutation testing`
+
+All four mods come out of a modding practice I have kept up since 2020, which is where I learned to work
 against large relational databases and an undocumented API — and to build the tests myself, since the
 engine reports runtime script errors with no message at all.
 
