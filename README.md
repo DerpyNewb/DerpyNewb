@@ -31,6 +31,15 @@ The validation suite is not tied to one provider; it stayed green through an Ant
 unmodified.
 `n8n` · `Gemini` · `Google Workspace`
 
+**[gameplay-video-qa](https://github.com/DerpyNewb/gameplay-video-qa)**: QA tooling for recorded gameplay.
+It checks every frame for freezes, black frames, scene cuts and brightness jumps, reads HUD bars that show
+no numbers as per-frame telemetry, and cuts labelled screenshots and before/during/after strips for bug
+reports. A Claude Code skill runs the review, and a checker rejects any finding that does not cite a real
+frame. For a full review, a multi-agent workflow covers every frame in 10-second windows and puts each
+reported issue through three independent checks (is it visible, can it be explained away, how severe)
+before a person rules on it. Built to review an AI agent's recorded boss fight against a reference run.
+`Python` · `FFmpeg` · `Claude Code`
+
 **[Grand-Trade-Exchange](https://github.com/DerpyNewb/Grand-Trade-Exchange)**: A commodities market and
 stock exchange for Total War: WARHAMMER III: 17 live-priced goods, faction shares, standing orders and a
 custom UI panel, all generated and self-tested from a single Python source. 24,751 lines of generator
@@ -75,7 +84,7 @@ Computing Science Congress (PCSC) and the AUDRN Conference.
 ### Toolkit
 
 Python · Java · SQL · Lua · C#
-Gemini and Anthropic APIs · prompt design and iteration · Claude Code
+Gemini and Anthropic APIs · prompt design and iteration · Claude Code · FFmpeg
 Unity · Godot · Firebase · Cloudflare Workers
 
 ### Contact
