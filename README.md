@@ -63,8 +63,8 @@ card cannot name a different guild than the one that gets paid.
 
 **[derpy-iron-court](https://github.com/DerpyNewb/derpy-iron-court)**: A political court for the Chaos
 Dwarfs: rival parties, fourteen offices, provincial overseers, loyalty, intrigue, and secession into a war
-on the map, with rival parties that scheme and make demands on their own. Checked by a 579-check Lua
-harness against a stubbed campaign, and by a mutation runner that plants 358 plausible bugs in the
+on the map, with rival parties that scheme and make demands on their own. Checked by a 771-check Lua
+harness against a stubbed campaign, and by a mutation runner that plants 760 plausible bugs in the
 shipped script one at a time and fails if any goes unnoticed. When one build broke the game's string library with no error
 pointing at the cause, the fault was bisected inside the running game through a scripting bridge.
 `Python` · `Lua` · `mutation testing`
