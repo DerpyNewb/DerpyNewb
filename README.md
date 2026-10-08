@@ -21,7 +21,7 @@ came back. A bounded tool-calling loop with SELECT-only validation on the model'
 **[automation-portfolio](https://github.com/DerpyNewb/automation-portfolio)**: Paste a job posting URL:
 fetch it, strip it, a model extracts structured fields, a validation layer checks them, and the result
 appends to a Google Sheet. Every node routes its failures to a separate tab.
-The validation suite passed unchanged when the model was switched from Anthropic to Gemini.
+The validation suite passed unchanged when I switched the model from Anthropic to Gemini.
 `n8n` · `Gemini` · `Google Workspace`
 
 **[gameplay-video-qa](https://github.com/DerpyNewb/gameplay-video-qa)**: QA tooling for recorded gameplay.
@@ -35,14 +35,14 @@ before a person reviews it. Built to review an AI agent's recorded boss fight ag
 
 **[Grand-Trade-Exchange](https://github.com/DerpyNewb/Grand-Trade-Exchange)**: A commodities market and
 stock exchange for Total War: WARHAMMER III: 17 live-priced goods, faction shares, standing orders and a
-custom UI panel, all generated and self-tested from a single Python source. 24,751 lines of generator
-code emitting the database tables, the campaign Lua and the interface layouts.
+custom UI panel, all generated and self-tested from a single Python source. The generator is 24,751 lines
+and writes the database tables, the campaign Lua and the interface layouts.
 `Python` · `Lua` · `relational game databases`
 
 **[Chaos-Dwarf-House-Ancillaries](https://github.com/DerpyNewb/Chaos-Dwarf-House-Ancillaries)**: 430
 pieces of equipment and four campaign routes that earn them, including 30 battle abilities written for
-the mod. Same approach: one Python source owns the items, and the 31 database tables, 1,350 localisation
-strings and the UI all fall out of it. A `--check` mode regenerates every committed file and fails if any
+the mod. Same approach: one Python source defines the items and generates the 31 database tables, 1,350
+localisation strings and the UI. A `--check` mode regenerates every committed file and fails if any
 differs from what is in the repo.
 `Python` · `Lua` · `code generation`
 
@@ -56,7 +56,7 @@ confirm each card names the guild that actually gets paid.
 
 **[derpy-iron-court](https://github.com/DerpyNewb/derpy-iron-court)**: A political court for the Chaos
 Dwarfs: rival parties, fourteen offices, provincial overseers, loyalty, intrigue, and secession into a war
-on the map, with rival parties that scheme and make their own demands. Tested by a 771-check Lua harness against a
+on the map, and the parties scheme and make their own demands. Tested by a 771-check Lua harness against a
 stubbed campaign, and by a mutation runner that plants 760 bugs in the script one at a time and fails
 if any goes undetected. When one build broke the game's string library with no error message, I
 bisected the fault inside the running game through a scripting bridge.
