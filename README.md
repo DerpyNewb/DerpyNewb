@@ -1,11 +1,6 @@
 ## Yohann Mar Gayao
 
-Computer Science graduate (AI specialisation), Baguio City, Philippines. Open to remote work.
-
-I build software around language models and then check whether the output holds up, which usually
-matters more than the model choice. Most of what is here is a full thing that works end to end rather
-than a snippet: the data layer, the model call, the validation, and the part that decides what to do
-when the answer is wrong.
+Computer Science graduate (AI specialisation), Baguio City, Philippines.
 
 From 04/2025 to 08/2026 I was Project Assistant VI on **[Project CrimeXPerience](https://crimexperience.com)**,
 a two-year DOST-funded XR crime scene simulation for Philippine criminology and forensics training, where I
