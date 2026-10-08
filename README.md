@@ -56,8 +56,8 @@ confirm each card names the guild that actually gets paid.
 
 **[derpy-iron-court](https://github.com/DerpyNewb/derpy-iron-court)**: A political court for the Chaos
 Dwarfs: rival parties, fourteen offices, provincial overseers, loyalty, intrigue, and secession into a war
-on the map, and the parties scheme and make their own demands. Tested by a 771-check Lua harness against a
-stubbed campaign, and by a mutation runner that plants 760 bugs in the script one at a time and fails
+on the map, and the parties scheme and make their own demands. Tested by a 1,070-check Lua harness against a
+stubbed campaign, and by a mutation runner that plants 1,179 bugs in the script one at a time and fails
 if any goes undetected. When one build broke the game's string library with no error message, I
 bisected the fault inside the running game through a scripting bridge.
 `Python` · `Lua` · `mutation testing`
