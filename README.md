@@ -62,6 +62,13 @@ if any goes undetected. When one build broke the game's string library with no e
 bisected the fault inside the running game through a scripting bridge.
 `Python` · `Lua` · `mutation testing`
 
+**[derpy-hashut-legendary-lords](https://github.com/DerpyNewb/derpy-hashut-legendary-lords)**: The 38
+tools behind a Chaos Dwarf lords mod whose pack holds 152 database tables and 77 Lua scripts. One Python
+table defines 46 victory routes across 13 houses and generates the rows, the text and the script that issues
+them. A self-test runs that script under Lua 5.1.5 against a stubbed campaign, and 13 mutants each break one
+line of it and must be caught. The importer re-opens the saved pack and reads every table back out.
+`Python` · `Lua` · `code generation`
+
 I have been modding Total War since 2020, working against a large relational game database and an
 undocumented scripting API.
 
