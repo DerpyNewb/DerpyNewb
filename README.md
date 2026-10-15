@@ -69,6 +69,15 @@ them. A self-test runs that script under Lua 5.1.5 against a stubbed campaign, a
 line of it and must be caught. The importer re-opens the saved pack and reads every table back out.
 `Python` · `Lua` · `code generation`
 
+**[derpy-third-person-battles](https://github.com/DerpyNewb/derpy-third-person-battles)**: Play one unit of
+a Total War: WARHAMMER III battle from behind, as a third-person action game: walk, look, swing, shoot and
+cast from its own HUD. The scripting API has no call for most of it, so the mod writes commands into the
+game's memory, and one file holds every address so a patch turns off a feature rather than the game. A
+239-test Lua harness runs the shipped modules frame by frame against a stubbed battle, and 392 mutants each
+plant a plausible bug that a test must catch. Animation ids, clip lengths and the camera's floor were
+measured in the running game with 216 probe scripts.
+`Lua` · `Python` · `reverse engineering`
+
 I have been modding Total War since 2020, working against a large relational game database and an
 undocumented scripting API.
 
