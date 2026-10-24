@@ -2,98 +2,67 @@
 
 Computer Science graduate (AI specialisation), Baguio City, Philippines.
 
-From 04/2025 to 08/2026 I was Project Assistant VI on **[Project CrimeXPerience](https://crimexperience.com)**,
-a two-year DOST-funded XR crime scene simulation for Philippine criminology and forensics training, where I
-built its AI witness interviews as a real-time voice agent: live audio with tool calls, graded at the end,
-with the original scripted dialogue kept as a fallback. I also built the server-side token broker and
-fail-closed feature gates, automated the project's log processing, survey
-analysis and document generation in Python, and trained the instructors who ran it. The project works with
-the Philippine National Police Academy and PNP Cordillera and was featured on
-[DOSTv's ExperTalk](https://www.youtube.com/watch?v=qvzBV1zxD7k). Its code is not public.
+### Portfolio websites
 
-### Projects
+- [Projects and demos](https://derpynewb.github.io/)
+- [AI video ads](https://derpynewb.github.io/ai-video-ads/)
+- [Total War mods](https://derpynewb.github.io/mods.html)
 
-**[SQL-Agent-Demo](https://github.com/DerpyNewb/SQL-Agent-Demo)**: Ask a plain-English question, Claude
-writes the SQL, it runs against a Cloudflare D1 dataset, and you get an answer built from the rows that
-came back. A bounded tool-calling loop with SELECT-only validation on the model's output.
-`Cloudflare Workers` · `D1` · `Anthropic SDK`
+### Experience
 
-**[automation-portfolio](https://github.com/DerpyNewb/automation-portfolio)**: Paste a job posting URL:
-fetch it, strip it, a model extracts structured fields, a validation layer checks them, and the result
-appends to a Google Sheet. Every node routes its failures to a separate tab.
-The validation suite passed unchanged when I switched the model from Anthropic to Gemini.
-`n8n` · `Gemini` · `Google Workspace`
+From April 2025 to August 2026, I was Project Assistant VI on
+[Project CrimeXPerience](https://crimexperience.com), a DOST-funded XR crime scene
+simulation at the University of the Cordilleras. I built Gemini Live Audio witness
+interviews with rubric grading and scripted fallback dialogue, a server-side token
+broker, and access gates requiring operator and instructor authorization. I also
+worked on Unity/Godot simulation features, Firebase integration and Python data
+processing, and trained staff to run the simulations. The project's code is private.
 
-**[gameplay-video-qa](https://github.com/DerpyNewb/gameplay-video-qa)**: QA tooling for recorded gameplay.
-It checks every frame for freezes, black frames, scene cuts and brightness jumps, reads HUD bars that show
-no numbers as per-frame telemetry, and cuts labelled screenshots and before/during/after strips for bug
-reports. A Claude Code skill runs the review, and a checker rejects any finding that does not cite a real
-frame. For a full review, a multi-agent workflow covers every frame in 10-second windows and puts each
-reported issue through three independent checks (is it visible, can it be explained away, how severe)
-before a person reviews it. Built to review an AI agent's recorded boss fight against a reference run.
-`Python` · `FFmpeg` · `Claude Code`
+### Tools
 
-**[Grand-Trade-Exchange](https://github.com/DerpyNewb/Grand-Trade-Exchange)**: A commodities market and
-stock exchange for Total War: WARHAMMER III: 17 live-priced goods, faction shares, standing orders and a
-custom UI panel, all generated and self-tested from a single Python source. The generator is 24,751 lines
-and writes the database tables, the campaign Lua and the interface layouts.
-`Python` · `Lua` · `relational game databases`
+- [SQL Query Agent](https://github.com/DerpyNewb/SQL-Agent-Demo): Claude tool calling,
+  a Cloudflare Worker and D1 demo data, with a keyword-blocklist SQL guard. Source
+  and guard tests are available; there is no public deployment.
+- [Job posting intake](https://github.com/DerpyNewb/automation-portfolio): an n8n
+  workflow with Gemini extraction, field validation and Google Sheets output.
+  The fetch path has runtime evidence; the model/Sheets path is not yet verified.
+  Make and Zapier versions are planned.
+- [Gameplay video QA](https://github.com/DerpyNewb/gameplay-video-qa): Python/FFmpeg
+  measurements, HUD-bar readings and labelled evidence for reviewing recorded
+  gameplay. Synthetic-video tests check the tools; a person reviews bug findings.
+- [Operations dashboard](https://github.com/DerpyNewb/business-operations-dashboard):
+  versioned CSV imports, maintenance assignments and finance/leasing summaries.
+  A local reference implementation with fictional data and local reminder logs.
+- [Lead-to-CRM automation](https://github.com/DerpyNewb/lead-crm-automation):
+  source-backed assessment, human approval and a durable operation queue.
+  The offline demo uses fixtures; connected HubSpot/Instantly execution is unverified.
+- [Rust calculator](https://github.com/DerpyNewb/rust-calculator): a desktop
+  calculator with mouse/keyboard input, expression parsing and formatting tests.
 
-**[Chaos-Dwarf-House-Ancillaries](https://github.com/DerpyNewb/Chaos-Dwarf-House-Ancillaries)**: 430
-pieces of equipment and four campaign routes that earn them, including 30 battle abilities written for
-the mod. Same approach: one Python source defines the items and generates the 31 database tables, 1,350
-localisation strings and the UI. A `--check` mode regenerates every committed file and fails if any
-differs from what is in the repo.
-`Python` · `Lua` · `code generation`
+### Total War: WARHAMMER III
 
-**[derpy-great-guilds](https://github.com/DerpyNewb/derpy-great-guilds)**: Six guilds that every
-faction of your race earns reputation with just by playing: trading, fighting, researching, building and
-raiding. Favour buys 18 services, bounties turn into real missions, and the AI factions of your race
-compete with you for the lead in each guild. Eight races have their own guild names, and 1,726 building
-cards say which guild they pay; a build check runs the script's own matching over every building to
-confirm each card names the guild that actually gets paid.
-`Python` · `Lua` · `game AI`
+I have been modding Total War since 2020, using Python generators, relational game
+data and Lua campaign scripts. Projects include
+[The Grand Trade Exchange](https://github.com/DerpyNewb/Grand-Trade-Exchange),
+[Chaos Dwarf House Ancillaries](https://github.com/DerpyNewb/Chaos-Dwarf-House-Ancillaries),
+[The Great Guilds](https://github.com/DerpyNewb/derpy-great-guilds) and
+[The Iron Court](https://github.com/DerpyNewb/derpy-iron-court).
 
-**[derpy-iron-court](https://github.com/DerpyNewb/derpy-iron-court)**: A political court for the Chaos
-Dwarfs: rival parties, fourteen offices, provincial overseers, loyalty, intrigue, and secession into a war
-on the map, and the parties scheme and make their own demands. Tested by a 1,070-check Lua harness against a
-stubbed campaign, and by a mutation runner that plants 1,179 bugs in the script one at a time and fails
-if any goes undetected. When one build broke the game's string library with no error message, I
-bisected the fault inside the running game through a scripting bridge.
-`Python` · `Lua` · `mutation testing`
+The [mods page](https://derpynewb.github.io/mods.html) links the other projects and
+separates out-of-game checks from in-game testing. Each repository records its own
+scope, checks and Workshop status.
 
-**[derpy-hashut-legendary-lords](https://github.com/DerpyNewb/derpy-hashut-legendary-lords)**: The 38
-tools behind a Chaos Dwarf lords mod whose pack holds 152 database tables and 77 Lua scripts. One Python
-table defines 46 victory routes across 13 houses and generates the rows, the text and the script that issues
-them. A self-test runs that script under Lua 5.1.5 against a stubbed campaign, and 13 mutants each break one
-line of it and must be caught. The importer re-opens the saved pack and reads every table back out.
-`Python` · `Lua` · `code generation`
+### Video work
 
-**[derpy-third-person-battles](https://github.com/DerpyNewb/derpy-third-person-battles)**: Play one unit of
-a Total War: WARHAMMER III battle from behind, as a third-person action game: walk, look, swing, shoot and
-cast from its own HUD. The scripting API has no call for most of it, so the mod writes commands into the
-game's memory, and one file holds every address so a patch turns off a feature rather than the game. A
-239-test Lua harness runs the shipped modules frame by frame against a stubbed battle, and 392 mutants each
-plant a plausible bug that a test must catch. Animation ids, clip lengths and the camera's floor were
-measured in the running game with 216 probe scripts.
-`Lua` · `Python` · `reverse engineering`
-
-I have been modding Total War since 2020, working against a large relational game database and an
-undocumented scripting API.
+The [video showcase](https://derpynewb.github.io/ai-video-ads/) contains AI-generated
+spec work for fictional brands, with production notes. It is not client work.
 
 ### Research
 
-**Photogrammetry and Neural Radiance Fields for Cultural Preservation**: Lead researcher. Built the
-evaluation pipeline, benchmarked NeRF variants (Splatfacto, Instant-NGP, Nerfacto) against traditional
-photogrammetry under controlled conditions, and scored outputs on STD, RMSE, and MAE to compare cost
-against fidelity. Presented at the Philippine
-Computing Science Congress (PCSC) and the AUDRN Conference.
-
-### Toolkit
-
-Python · Java · SQL · Lua · C#
-Gemini and Anthropic APIs · prompt design and iteration · Claude Code · FFmpeg
-Unity · Godot · Firebase · Cloudflare Workers
+From January to August 2024, I led research on photogrammetry and Neural Radiance
+Fields for cultural preservation. I built Python image-processing pipelines and
+benchmarked Instant-NGP, Splatfacto and Nerfacto against photogrammetry using STD,
+RMSE and MAE. Presented at PCSC and AUDRN.
 
 ### Contact
 
