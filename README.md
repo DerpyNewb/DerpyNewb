@@ -5,8 +5,6 @@ Computer Science graduate (AI specialisation), Baguio City, Philippines.
 ### Portfolio websites
 
 - [Projects and demos](https://derpynewb.github.io/)
-- [AI video ads](https://derpynewb.github.io/ai-video-ads/)
-- [Total War mods](https://derpynewb.github.io/mods.html)
 
 ### Experience
 
