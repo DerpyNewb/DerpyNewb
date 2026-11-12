@@ -13,7 +13,7 @@ From April 2025 to August 2026, I was Project Assistant VI on
 simulation at the University of the Cordilleras. I built Gemini Live Audio witness
 interviews with rubric grading and scripted fallback dialogue, a server-side token
 broker, and access gates requiring operator and instructor authorization. I also
-worked on Unity/Godot simulation features, Firebase integration and Python data
+worked on Unity AR and VR simulation features, Firebase integration and Python data
 processing, and trained staff to run the simulations. The project's code is private.
 
 ### Tools
