@@ -36,6 +36,14 @@ processing, and trained staff to run the simulations. The project's code is priv
   The offline demo uses fixtures; connected HubSpot/Instantly execution is unverified.
 - [Rust calculator](https://github.com/DerpyNewb/rust-calculator): a desktop
   calculator with mouse/keyboard input, expression parsing and formatting tests.
+- [Late-trip monitor](https://github.com/DerpyNewb/late-trip-monitor): a check for
+  medical-transport dispatch that compares driver ETAs with pickup windows and drafts
+  rider texts for a dispatcher to approve. It uses made-up data and has an
+  [interactive demo](https://derpynewb.github.io/late-trip-monitor/); it isn't connected
+  to a dispatch system.
+- [Job tracker](https://github.com/DerpyNewb/job-tracker): a Rust/egui desktop app and
+  command line over an Excel application log, with save checks, backups and tests that
+  render each screen.
 
 ### Total War: WARHAMMER III
 
@@ -54,6 +62,12 @@ scope, checks and Workshop status.
 
 The [video showcase](https://derpynewb.github.io/ai-video-ads/) contains AI-generated
 spec work for fictional brands, with production notes. It is not client work.
+
+[Programmatic video editing](https://derpynewb.github.io/programmatic-video-editing/)
+shows three narrated explainers made without AI video: openly licensed footage, Manim
+graphics, and cuts placed in code by the narrator's word timings. The narration is
+Gemini text-to-speech. The Great Pyramid video also has a second cut built in Remotion
+([source](https://github.com/DerpyNewb/remotion-giza-explainer)).
 
 ### Research
 
